@@ -17,10 +17,10 @@ class Solution {
         int n2 = n+1;
         
         while(true) {
-			if(changeNum(n)==changeNum(n2))
-				break;
-			else
-				n2++;
+		if(changeNum(n)==changeNum(n2))
+			break;
+		else
+			n2++;
 		}
         
         return n2;
