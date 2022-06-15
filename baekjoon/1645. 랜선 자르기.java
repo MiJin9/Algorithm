@@ -18,13 +18,13 @@ class Main {
         while(start<=end) {
             mid = (start + end)/2;
             long cnt = 0;
-        	    for(int i=0; i<n; i++) {
-        		cnt += haveLength[i]/mid;
-        	    }
+            for(int i=0; i<n; i++) {
+        	    cnt += haveLength[i]/mid;
+        	}
         	
             if(cnt<k) {
-        	        end = mid-1;        		
-        	    }else{
+        	    end = mid-1;        		
+        	}else{
                 start = mid+1;
             }
         }
